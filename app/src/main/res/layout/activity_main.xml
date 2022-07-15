@@ -1,11 +1,442 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="732dp"
+    android:background="@color/background_color">
 
-    <!-- Место для верстки -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_background"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_back"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_button_circle"
+                    android:drawableLeft="@drawable/image_arrow_left"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:id="@+id/text_options"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_button_circle"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="15dp"
+                    android:text="..."
+                    android:textColor="@color/white"
+                    android:textSize="26dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_logo"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="163dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_soft_rect_12"
+                    android:drawableLeft="@drawable/image_logo_game"
+                    android:paddingLeft="15dp" />
+
+                <LinearLayout
+                    android:layout_width="112dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="124dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_name"
+                        android:textColor="@color/white"
+                        android:textSize="40px"
+                        android:fontFamily="@font/sk_modernist_bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/imageStar1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star2" />
+
+                            <ImageView
+                                android:id="@+id/imageStar2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star3" />
+
+                            <ImageView
+                                android:id="@+id/imageStar3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star4" />
+
+                            <ImageView
+                                android:id="@+id/imageStar4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star5" />
+
+                            <ImageView
+                                android:id="@+id/imageStar5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star1" />
+
+                            <TextView
+                                android:id="@+id/text_downloads"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="70M"
+                                android:textColor="@color/gray_downloads"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/sk_modernist_regular"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="239dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_moba"
+                    android:layout_width="53dp"
+                    android:layout_height="22dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_blue_oval"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/game_moba"
+                    android:textColor="@color/menu_textcolor_blue"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/montserrat_medium"/>
+
+                <TextView
+                    android:id="@+id/text_multiplayer"
+                    android:layout_width="93dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="63dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_blue_oval"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/game_multiplayer"
+                    android:textColor="@color/menu_textcolor_blue"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/montserrat_medium"/>
+
+                <TextView
+                    android:id="@+id/text_strategy"
+                    android:layout_width="73dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="166dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_blue_oval"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/game_strategy"
+                    android:textColor="@color/menu_textcolor_blue"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/montserrat_medium"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_app_discription"
+                android:layout_width="327dp"
+                android:layout_height="93dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/app_discription"
+                android:textColor="@color/menu_textdescription"
+                android:textSize="12sp"
+                android:fontFamily="@font/sk_modernist_regular"/>
+
+            <LinearLayout
+                android:layout_width="161dp"
+                android:layout_height="89dp"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_review_rating"
+                    android:layout_width="276dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/review_and_rating"
+                    android:textColor="@color/review_and_rating"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sk_modernist_bold"/>
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="58dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_app_rating"
+                        android:layout_width="69dp"
+                        android:layout_height="58dp"
+                        android:layout_weight="1"
+                        android:text="4.9"
+                        android:textColor="@color/white"
+                        android:textSize="48sp"
+                        android:fontFamily="@font/sk_modernist_bold"/>
+
+                    <LinearLayout
+                        android:layout_width="76dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/imageStar6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star2" />
+
+                            <ImageView
+                                android:id="@+id/imageStar7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star3" />
+
+                            <ImageView
+                                android:id="@+id/imageStar8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star4" />
+
+                            <ImageView
+                                android:id="@+id/imageStar9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star5" />
+
+                            <ImageView
+                                android:id="@+id/imageStar10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/image_star1" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/text_70m_reviews"
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"
+                            android:text="@string/reviews_70m"
+                            android:textColor="@color/review_70m"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="327dp"
+                android:layout_height="116dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="166dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_auguste"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/image_auguste" />
+
+                    <LinearLayout
+                        android:layout_width="114dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_name_auguste"
+                            android:layout_width="match_parent"
+                            android:layout_height="19dp"
+                            android:text="@string/name_auguste"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/sk_modernist_regular"/>
+
+                        <TextView
+                            android:id="@+id/text_date_auguste"
+                            android:layout_width="102dp"
+                            android:layout_height="14dp"
+                            android:text="@string/date_auguste_jang"
+                            android:textSize="12sp"
+                            android:textColor="@color/white40"
+                            android:fontFamily="@font/sk_modernist_regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_review_auguste"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="@string/people_review"
+                    android:textColor="@color/review_70m"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/sk_modernist_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="327dp"
+                android:layout_height="121dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="166dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_jang"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/image_jang" />
+
+                    <LinearLayout
+                        android:layout_width="114dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_name_jang"
+                            android:layout_width="match_parent"
+                            android:layout_height="19dp"
+                            android:text="@string/name_jang"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/sk_modernist_regular"/>
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="102dp"
+                            android:layout_height="14dp"
+                            android:text="@string/date_auguste_jang"
+                            android:textColor="@color/white40"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/sk_modernist_regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_review_jang"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="@string/people_review"
+                    android:textColor="@color/review_70m"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/sk_modernist_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="327dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="24dp"
+                android:background="@color/background_install"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_install"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="140dp"
+                    android:layout_weight="1"
+                    android:text="@string/install"
+                    android:textColor="@color/text_install"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/sk_modernist_bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

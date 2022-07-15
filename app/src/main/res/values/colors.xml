@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#050B18</color>
+    <color name="white28">#47FFFFFF</color>
+    <color name="gray_downloads">#45454D</color>
+    <color name="menu_blue">#3D44A9F4</color>
+    <color name="menu_textcolor_blue">#41A0E7</color>
+    <color name="menu_textdescription">#B3EEF2FB</color>
+    <color name="review_and_rating">#EEF2FB</color>
+    <color name="review_70m">#A8ADB7</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="text_install">#050B18</color>
+    <color name="background_install">#F4D144</color>
 </resources>
